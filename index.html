@@ -1,0 +1,7 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data Diff Explorer</title><link rel="stylesheet" href="styles.css"></head><body><div class="shell"><div class="topbar"><div class="brand">Data Diff Explorer</div><a href="https://raoulmunet.github.io/dev-data-tools/">Dev Data Tools</a></div><section class="hero"><h1>Data Diff Explorer</h1><p class="muted">Compare two CSV snapshots by a key column.</p></section><section class="panel"><div class="cols"><div class="field"><label>Before</label><textarea id="before">id,name,status
+1,Ana,active
+2,Bob,active
+3,Cara,pending</textarea></div><div class="field"><label>After</label><textarea id="after">id,name,status
+1,Ana,active
+2,Bob,blocked
+4,Dan,active</textarea></div></div><div class="toolbar"><input id="key" value="id"><button class="primary" id="run">Compare</button></div><div id="summary" class="statrow"></div><div id="result"></div></section></div><script src="app.js"></script></body></html>
